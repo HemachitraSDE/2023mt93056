@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+<package name="controller" extends="struts-default">
+
+<interceptors>
+	<interceptor class="controller.LoginInterceptor" name="LoginInterceptor" />
+		</interceptors>
+
+<action name="login-1" class="controller.LoginController" method="execute">
+ <interceptor-ref name="LoginInterceptor"></interceptor-ref>
+        <interceptor-ref name="defaultStack"></interceptor-ref>
+<result name="input">/index1.jsp</result>
+<result name="success">/success_file.jsp</result>
+</action>
+
+<action class="controller.Logout"
+			name="logout">
+<result name="Logout1">/index1.jsp</result>
+		</action>
+</package>
+
+</struts>
