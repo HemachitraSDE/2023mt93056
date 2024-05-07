@@ -7,7 +7,7 @@ webhook_url = 'http://192.168.1.6:8000/:8000/HB1-directory/webhook'
 # Sample payload data
 payload = {
     'event': 'build',
-    'message': 'Hello Hemachitra'
+    'message': 'Hello Hemachitra yu'
 }
 
 def send_webhook():
