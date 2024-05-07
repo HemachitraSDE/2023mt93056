@@ -1,9 +1,6 @@
 import requests
 import json
 
-# Webhook URL to send the payload to
-webhook_url = 'http://192.168.1.6:8000/:8000/HB1-directory/webhook'
-
 # Sample payload data
 payload = {
     'event': 'build',
